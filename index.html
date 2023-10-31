@@ -10,168 +10,14 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-	<style type="text/css">
-		html {
-			font-family: Helvetica, Arial, sans-serif;
-			text-align: justify;
-			text-justify: inter-word;
-		}
-		body {
-			margin: 40px auto;
-			max-width: 650px;
-			line-height: 1.6;
-			font-size: 18px;
-			color: #222222;
-			padding: 0 10px;
-		}
-		a:link {
-			color: #0F79D0;
-			text-decoration: none;
-		}
-		table, th, td {
-			border: 1px solid #222222;
-			border-collapse: collapse;
-			padding: 10px;
-		}
-		table {
-			width: 100%;
-		}
-		th {
-			color: #F0F0F0;
-			background-color: #373737;
-		}
-		header {
-			text-align: center;
-		}
-		h1 {
-			font-size: 64px;
-		}
-		h2 {
-			font-size: 40px;
-		}
-		h3 {
-			font-size: 32px;
-		}
-		h4 {
-			font-size: 22px;
-		}
-		h1, h2, h3 {
-			line-height: 1.2;
-		}
-		h1, h2, h3, h4, h5, h6 {
-			text-align: center;
-			font-weight: bold;
-		}
-		img {
-			width: 100%;
-			height: auto;
-		}
-		iframe {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.video-container {
-			position: relative;
-			padding-bottom: 56.25%; /* 16:9 */
-			height: 0;
-		}
-		.video-container iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-		.centered-items {
-			display: flex;
-		}
-		.navbar, .navbar-collapse, .centered-items {
-			justify-content: center;
-			align-items: center;
-		}
-		.navbar-toggler, navbar-toggler-icon, .navbar-nav, .navbar-collapse {
-			margin: 0px;
-			padding: 0px;
-		}
-		.nav-link {
-			margin: 0 10px;
-			-webkit-transition: all 0.3s;
-			transition: all 0.3s;
-			color: #0F79D0;
-		}
-		.navbar-brand {
-			margin: 0px;
-			width: 55px;
-			transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		}
-		.navbar.fixed-top {
-			background-color: #ffffff;
-			box-shadow: 0 6px 15px rgba(206, 212, 218, 0.3);
-		}
-		.section {
-			margin: 0px;
-			flex-grow: 1;
-			opacity: 0;
-			transition: opacity 0.5s;
-			padding: 0px;
-		}
-		.fade-in {
-			animation: fadeIn 1.2s ease-in-out forwards;
-		}
-		@keyframes fadeIn {
-			from {
-				opacity: 0;
-				transform: translateY(100px);
-			}
-			to {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-		.tiny-line {
-			border-top: 1px solid #808080;
-		}
-		.small-line {
-			border-top: 1px solid #222222;
-		}
-		.large-line {
-			border-top: 2px solid #222222;
-		}
-		.tiny-line, .small-line, .large-line {
-			margin-top: 30px;
-			margin-bottom: 30px;
-		}
-		.skills-logos {
-			padding: 10px;
-			transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-		}
-		.skills-logos:hover {
-			transform: scale(1.1);
-		}
-		.btn, .btn-primary {
-			color: #ffffff !important;
-		}
-		ul {
-			padding-right: 20px;
-		}
-		@media (min-width: 992px) {
-			.container {
-				width: auto;
-			}
-		}
-		@media (max-width: 991px) {
-			.container {
-				width: 100%;
-				max-width: 100%
-			}
-		}
-	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet"/>
+	
 </head>
 <body id="">
 	<nav class="navbar navbar-expand-md fixed-top" style="margin: 0px !important; padding: 0px !important;">
 		<div class="container" style="flex-direction: row; white-space: nowrap;">
-			<a class="navbar-brand" href="#"><img src="images/Logo.png" alt="Logo" style="width: auto; height: 55px;"></a>
+			<a class="navbar-brand" href="#"><img src="images/logos/Logo.png" alt="Logo" style="width: auto; height: 55px;"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -205,11 +51,11 @@
 		<div class="large-line"></div>
 		<h2>Skills and Assets</h2>
 		<div class="centered-items">
-			<a href="https://unity.com" target="_blank"><img src="images/Unity.png" style="width:120px;" class="skills-logos img-fluid" alt="Unity" title="Unity"></a>
-			<a href="https://learn.microsoft.com/en-us/dotnet/csharp" target="_blank"><img src="images/CSharp.svg" style="width:120px;" class="skills-logos img-fluid" alt="C#" title="C#"></a>
-			<a href="https://www.java.com" target="_blank"><img src="images/Java.svg" style="width:120px;" class="skills-logos img-fluid" alt="Java" title="Java"></a>
-			<a href="https://www.java.com" target="_blank"><img src="images/Python.svg" style="width:120px;" class="skills-logos img-fluid" alt="Python" title="Python"></a>
-			<a href="https://www.w3schools.com/c/c_intro.php" target="_blank"><img src="images/C.png" style="width:120px;" class="skills-logos img-fluid" alt="C" title="C"></a>
+			<a href="https://unity.com" target="_blank"><img src="images/logos/Unity.png" style="width:120px;" class="skills-logos img-fluid" alt="Unity" title="Unity"></a>
+			<a href="https://learn.microsoft.com/en-us/dotnet/csharp" target="_blank"><img src="images/logos/CSharp.svg" style="width:120px;" class="skills-logos img-fluid" alt="C#" title="C#"></a>
+			<a href="https://www.java.com" target="_blank"><img src="images/logos/Java.svg" style="width:120px;" class="skills-logos img-fluid" alt="Java" title="Java"></a>
+			<a href="https://www.java.com" target="_blank"><img src="images/logos/Python.svg" style="width:120px;" class="skills-logos img-fluid" alt="Python" title="Python"></a>
+			<a href="https://www.w3schools.com/c/c_intro.php" target="_blank"><img src="images/logos/C.png" style="width:120px;" class="skills-logos img-fluid" alt="C" title="C"></a>
 		</div>
 		<ul>
 			<li>Honors Bachelor of Computer Science student specializing in Game Development.</li>
@@ -289,12 +135,12 @@
 			<br/>January 2023 to Present
 		</center>
 		<br/>
-		<a href="https://uwindsor.ca" title="University of Windsor" target="_blank"><img src="images/University of Windsor.png" alt="University of Windsor"></a>
+		<a href="https://uwindsor.ca" title="University of Windsor" target="_blank"><img src="images/logos/University of Windsor.png" alt="University of Windsor"></a>
 		<br/>
 		<br/>
 		<ul>
 			<li>Teaching assistant for "COMP-3770 Game Design, Development and Tools" and "COMP-2140 Computer Languages, Grammars, and Translators".</li>
-			<li>Taught students game development with Unity.</li>
+			<li>Instructed students on game development with Unity.</li>
 			<li>Tutored students on data structures, algorithms, and logic.</li>
 			<li>Conducted labs, graded assignments and tests, and proctored exams.</li>
 		</ul>
@@ -310,7 +156,7 @@
 			<b>92.03% Cumulative Average</b>
 			<br/>September 2019 to Present
 		</center>
-		<a href="https://uwindsor.ca" title="University of Windsor" target="_blank"><img src="images/University of Windsor.png" alt="University of Windsor"></a>
+		<a href="https://uwindsor.ca" title="University of Windsor" target="_blank"><img src="images/logos/University of Windsor.png" alt="University of Windsor"></a>
 	</section>
 	<section class="section">
 		<div class="small-line"></div>
@@ -392,7 +238,7 @@
 		<br/>
 		<ul>
 			<li>Follow a strength training program focusing on the squat, bench press, and deadlift.</li>
-			<li>Focus on my health and nutrition.</li>
+			<li>Dedicated focus on health and nutrition by incorporating healthy eating habits that supports my overall health and wellness.</li>
 			<li>Have helped friends begin their journey in the gym.</li>
 		</ul>
 	</section>
@@ -402,7 +248,7 @@
 		<div class="large-line"></div>
 	</section>
 	<section class="section">
-		<a href="https://uwindsor.ca" title="University of Windsor" target="_blank"><img src="images/University of Windsor.png" alt="University of Windsor"></a>
+		<a href="https://uwindsor.ca" title="University of Windsor" target="_blank"><img src="images/logos/University of Windsor.png" alt="University of Windsor"></a>
 		<br/>
 		<br/>
 		<table>

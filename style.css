@@ -1,0 +1,156 @@
+	/* ***** STYLE SHEET FOR NONIKA.CA ***** */
+	html {
+		text-align: justify;
+		text-justify: inter-word;
+	}
+	body {
+		margin: 40px auto;
+		max-width: 650px;
+		line-height: 1.6;
+		font-size: 18px;
+		color: #222222;
+		padding: 0 10px;
+		font-family: 'Roboto Serif', serif;
+	}
+	a:link {
+		color: #0F79D0;
+		text-decoration: none;
+	}
+	table, th, td {
+		border: 1px solid #222222;
+		border-collapse: collapse;
+		padding: 10px;
+	}
+	table {
+		width: 100%;
+	}
+	th {
+		color: #F0F0F0;
+		background-color: #373737;
+	}
+	header {
+		text-align: center;
+	}
+	h1 {
+		font-size: 64px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 32px;
+	}
+	h4 {
+		font-size: 22px;
+	}
+	h1, h2, h3 {
+		line-height: 1.2;
+	}
+	h1, h2, h3, h4, h5, h6 {
+		text-align: center;
+		font-weight: bold;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	iframe {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.video-container {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+	}
+	.video-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.centered-items {
+		display: flex;
+	}
+	.navbar, .navbar-collapse, .centered-items {
+		justify-content: center;
+		align-items: center;
+	}
+	.navbar-toggler, navbar-toggler-icon, .navbar-nav, .navbar-collapse {
+		margin: 0px;
+		padding: 0px;
+	}
+	.nav-link {
+		margin: 0 10px;
+		-webkit-transition: all 0.3s;
+		transition: all 0.3s;
+		color: #0F79D0;
+	}
+	.navbar-brand {
+		margin: 0px;
+		width: 55px;
+		transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	}
+	.navbar.fixed-top {
+		background-color: #ffffff;
+		box-shadow: 0 6px 15px rgba(206, 212, 218, 0.3);
+	}
+	.section {
+		margin: 0px;
+		flex-grow: 1;
+		opacity: 0;
+		transition: opacity 0.5s;
+		padding: 0px;
+	}
+	.fade-in {
+		animation: fadeIn 1.2s ease-in-out forwards;
+	}
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+			transform: translateY(100px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	.tiny-line {
+		border-top: 1px solid #808080;
+	}
+	.small-line {
+		border-top: 1px solid #222222;
+	}
+	.large-line {
+		border-top: 2px solid #222222;
+	}
+	.tiny-line, .small-line, .large-line {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.skills-logos {
+		padding: 10px;
+		transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	}
+	.skills-logos:hover {
+		transform: scale(1.1);
+	}
+	.btn, .btn-primary {
+		color: #ffffff !important;
+	}
+	ul {
+		padding-right: 20px;
+	}
+	@media (min-width: 992px) {
+		.container {
+			width: auto;
+		}
+	}
+	@media (max-width: 991px) {
+		.container {
+			width: 100%;
+			max-width: 100%
+		}
+	}
