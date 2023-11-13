@@ -1,23 +1,49 @@
 	/* ***** STYLE SHEET FOR NONIKA.CA ***** */
+	
 	html {
 		text-align: justify;
 		text-justify: inter-word;
 	}
+	
+	/* ***** STYLE FOR BODY ***** */
 	body {
+		background-image: url('images/pixels/bg.png');
 		margin: 40px auto;
-		max-width: 650px;
+		max-width: 750px;
 		line-height: 1.6;
 		font-size: 18px;
-		color: #222222;
+		color: #301000;
 		padding: 0 10px;
 		font-family: 'Roboto Serif', serif;
 	}
+	
+	/* ***** STYLE FOR MAIN CONTENT ***** */
+	main {
+		background: #ffe8f0f0;
+		border: 2px solid;
+		border-color: #301000;
+	}
+	
+	/* TODO: Why is this a:link instead of just a? */
 	a:link {
-		color: #0F79D0;
+		color: #ff0080;
 		text-decoration: none;
 	}
+	
+	a img {
+		mask-image: none;
+	}
+	
+	/* TODO: a:hover {} */
+	
+	/* TODO: logo filter to make logos pink, but colourful on hover */
+	
+	p {
+		padding: 0px 20px 0px 20px;
+	}
+	
 	table, th, td {
-		border: 1px solid #222222;
+		border: 1px solid #301000;
 		border-collapse: collapse;
 		padding: 10px;
 	}
@@ -28,6 +54,7 @@
 		color: #F0F0F0;
 		background-color: #373737;
 	}
+	
 	header {
 		text-align: center;
 	}
@@ -43,17 +70,27 @@
 	h4 {
 		font-size: 22px;
 	}
-	h1, h2, h3 {
-		line-height: 1.2;
-	}
 	h1, h2, h3, h4, h5, h6 {
 		text-align: center;
 		font-weight: bold;
 	}
+	
 	img {
-		width: 100%;
+		width: 50%;
 		height: auto;
+		display: block;
+		margin: auto auto auto auto;
 	}
+	
+	/* ***** BORDERS FOR IMAGES ***** */
+	.image img {
+		width: 100%;
+		margin: 10px auto 10px auto;
+		padding: 0px;
+		border: 2px solid;
+		border-color: #301000;
+	}
+	
 	iframe {
 		display: block;
 		margin-left: auto;
@@ -121,10 +158,10 @@
 		border-top: 1px solid #808080;
 	}
 	.small-line {
-		border-top: 1px solid #222222;
+		border-top: 1px solid #301000;
 	}
 	.large-line {
-		border-top: 2px solid #222222;
+		border-top: 2px solid #301000;
 	}
 	.tiny-line, .small-line, .large-line {
 		margin-top: 30px;
@@ -138,7 +175,12 @@
 		transform: scale(1.1);
 	}
 	.btn, .btn-primary {
+		margin: 5px auto 5px auto;
+		font-size: 24px;
 		color: #ffffff !important;
+		/*
+		background-color: #ff0080;
+		*/
 	}
 	ul {
 		padding-right: 20px;
