@@ -1,33 +1,58 @@
 	/* ***** STYLE SHEET FOR NONIKA.CA ***** */
+	
 	html {
 		text-align: justify;
 		text-justify: inter-word;
 	}
+	
+	/* ***** STYLE FOR BODY ***** */
 	body {
+		background-image: url('images/pixels/bg.png');
 		margin: 40px auto;
-		max-width: 650px;
+		max-width: 750px;
 		line-height: 1.6;
 		font-size: 18px;
-		color: #222222;
+		color: #301000;
 		padding: 0 10px;
 		font-family: 'Roboto Serif', serif;
 	}
-	a:link {
-		color: #0F79D0;
+	
+	/* ***** STYLE FOR MAIN CONTENT ***** */
+	main {
+		background: #ffe8f0f0;
+		border: 2px solid;
+		border-color: #301000;
+	}
+	
+	/* TODO: Why is this a:link instead of just a? */
+	a {
+		color: #ff0080;
 		text-decoration: none;
 	}
+	
+	a img {
+		mask-image: none;
+	}
+	
+	/* TODO: a:hover {} */
+	
+	/* TODO: logo filter to make logos pink, but colourful on hover */
+	
+	p {
+		padding: 0px 20px 0px 20px;
+	}
+	
 	table, th, td {
-		border: 1px solid #222222;
+		margin: auto 10px auto 10px;
+		border: 1px solid #301000;
 		border-collapse: collapse;
 		padding: 10px;
 	}
-	table {
-		width: 100%;
-	}
 	th {
-		color: #F0F0F0;
-		background-color: #373737;
+		color: #301000;
+		background-color: #ffcfe0;
 	}
+	
 	header {
 		text-align: center;
 	}
@@ -43,17 +68,48 @@
 	h4 {
 		font-size: 22px;
 	}
-	h1, h2, h3 {
-		line-height: 1.2;
-	}
 	h1, h2, h3, h4, h5, h6 {
 		text-align: center;
 		font-weight: bold;
 	}
+	
 	img {
-		width: 100%;
+		width: 50%;
 		height: auto;
+		display: block;
+		margin: auto auto auto auto;
 	}
+	
+	/* ***** BORDERS FOR IMAGES ***** */
+	.image img {
+		width: 100%;
+		margin: 10px auto 10px auto;
+		padding: 0px;
+		border: 2px solid;
+		border-color: #301000;
+	}
+	
+	.btn, .btn-primary {
+		margin: 5px auto 5px auto;
+		font-size: 24px;
+		color: #ffffff !important;
+		background-color: #ff0080;
+		border-color: #ff0080;
+	}
+	.btn:hover, .btn-primary:hover {
+		color: #ffffff !important;
+		background-color: #d4006d;
+		border-color: #d4006d;
+	}
+	
+	.standalone-logo {
+		color: #ff0080;
+	}
+	
+	.standalone-logo:hover {
+		color: #d4006d;
+	}
+	
 	iframe {
 		display: block;
 		margin-left: auto;
@@ -86,7 +142,7 @@
 		margin: 0 10px;
 		-webkit-transition: all 0.3s;
 		transition: all 0.3s;
-		color: #0F79D0;
+		color: #ff0080;
 	}
 	.navbar-brand {
 		margin: 0px;
@@ -94,8 +150,10 @@
 		transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	}
 	.navbar.fixed-top {
-		background-color: #ffffff;
-		box-shadow: 0 6px 15px rgba(206, 212, 218, 0.3);
+		background-color: #ffe8f0;
+		border-bottom: 2px solid;
+		border-color: #301000;
+		box-shadow: 0 6px 15px #ffcfe0;
 	}
 	.section {
 		margin: 0px;
@@ -118,13 +176,13 @@
 		}
 	}
 	.tiny-line {
-		border-top: 1px solid #808080;
+		border-top: 1px solid #301000;
 	}
 	.small-line {
-		border-top: 1px solid #222222;
+		border-top: 1px solid #301000;
 	}
 	.large-line {
-		border-top: 2px solid #222222;
+		border-top: 2px solid #301000;
 	}
 	.tiny-line, .small-line, .large-line {
 		margin-top: 30px;
@@ -136,9 +194,6 @@
 	}
 	.skills-logos:hover {
 		transform: scale(1.1);
-	}
-	.btn, .btn-primary {
-		color: #ffffff !important;
 	}
 	ul {
 		padding-right: 20px;
