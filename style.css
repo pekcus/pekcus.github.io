@@ -25,7 +25,7 @@
 	}
 	
 	/* TODO: Why is this a:link instead of just a? */
-	a:link {
+	a {
 		color: #ff0080;
 		text-decoration: none;
 	}
@@ -43,16 +43,14 @@
 	}
 	
 	table, th, td {
+		margin: auto 10px auto 10px;
 		border: 1px solid #301000;
 		border-collapse: collapse;
 		padding: 10px;
 	}
-	table {
-		width: 100%;
-	}
 	th {
-		color: #F0F0F0;
-		background-color: #373737;
+		color: #301000;
+		background-color: #ffcfe0;
 	}
 	
 	header {
@@ -91,6 +89,27 @@
 		border-color: #301000;
 	}
 	
+	.btn, .btn-primary {
+		margin: 5px auto 5px auto;
+		font-size: 24px;
+		color: #ffffff !important;
+		background-color: #ff0080;
+		border-color: #ff0080;
+	}
+	.btn:hover, .btn-primary:hover {
+		color: #ffffff !important;
+		background-color: #d4006d;
+		border-color: #d4006d;
+	}
+	
+	.standalone-logo {
+		color: #ff0080;
+	}
+	
+	.standalone-logo:hover {
+		color: #d4006d;
+	}
+	
 	iframe {
 		display: block;
 		margin-left: auto;
@@ -123,7 +142,7 @@
 		margin: 0 10px;
 		-webkit-transition: all 0.3s;
 		transition: all 0.3s;
-		color: #0F79D0;
+		color: #ff0080;
 	}
 	.navbar-brand {
 		margin: 0px;
@@ -131,8 +150,10 @@
 		transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	}
 	.navbar.fixed-top {
-		background-color: #ffffff;
-		box-shadow: 0 6px 15px rgba(206, 212, 218, 0.3);
+		background-color: #ffe8f0;
+		border-bottom: 2px solid;
+		border-color: #301000;
+		box-shadow: 0 6px 15px #ffcfe0;
 	}
 	.section {
 		margin: 0px;
@@ -155,7 +176,7 @@
 		}
 	}
 	.tiny-line {
-		border-top: 1px solid #808080;
+		border-top: 1px solid #301000;
 	}
 	.small-line {
 		border-top: 1px solid #301000;
@@ -173,14 +194,6 @@
 	}
 	.skills-logos:hover {
 		transform: scale(1.1);
-	}
-	.btn, .btn-primary {
-		margin: 5px auto 5px auto;
-		font-size: 24px;
-		color: #ffffff !important;
-		/*
-		background-color: #ff0080;
-		*/
 	}
 	ul {
 		padding-right: 20px;
