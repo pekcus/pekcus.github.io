@@ -57,9 +57,11 @@
 		text-align: center;
 	}
 	h1 {
+		margin: 10px 10px 10px 10px;
 		font-size: 64px;
 	}
 	h2 {
+		margin: 10px 10px 10px 10px;
 		font-size: 40px;
 	}
 	h3 {
@@ -89,6 +91,7 @@
 		border-color: #301000;
 	}
 	
+	/* ***** BUTTONS ***** */
 	.btn, .btn-primary {
 		margin: 5px auto 5px auto;
 		font-size: 24px;
@@ -101,13 +104,15 @@
 		background-color: #d4006d;
 		border-color: #d4006d;
 	}
-	
 	.standalone-logo {
 		color: #ff0080;
 	}
-	
 	.standalone-logo:hover {
 		color: #d4006d;
+	}
+	.b2t {
+		display: block;
+		position: fixed;
 	}
 	
 	iframe {
