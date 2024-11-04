@@ -98,10 +98,10 @@
 		background-color: var(--c3);
 		border-color: var(--c3);
 	}
-	.btn:hover, .btn-primary:hover {
+	.btn:hover, .btn-primary:hover, .btn-primary:active, .btn:active {
 		color: var(--white) !important;
-		background-color: var(--c1);
-		border-color: var(--c1);
+		background-color: var(--c1) !important;
+		border-color: var(--c1) !important;
 	}
 	.standalone-logo {
 		color: var(--c3);
