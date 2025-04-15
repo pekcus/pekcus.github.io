@@ -196,7 +196,7 @@
 		background-position: center;
 		background-size: 5.1%;
 		border-bottom: 30px;
-		border-image: url('images/pixels/nav.gif') 0 0 40 0 / / 0px 0px 30px 0px repeat;
+		border-image: url('images/pixels/nav.gif') 0 0 40 0 / / 0px 0px 29px 0px repeat;
 		border-image-width: 0px 0px 30px 0px;
 		/**
 		border-bottom: 2px solid;
