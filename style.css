@@ -276,7 +276,7 @@
 	.skills-logos:hover {
 		transform: scale(1.1);
 	}
-	ul {
+	ul, ol {
 		padding-right: 20px;
 		text-align: left;
 	}
