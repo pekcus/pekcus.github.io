@@ -84,6 +84,9 @@
 		font-weight: bold;
 		margin: 0px 0px 0px 0px;
 	}
+	.cred {
+		font-size: 10px;
+	}
 	.centered-items {
 		display: flex;
 	}
