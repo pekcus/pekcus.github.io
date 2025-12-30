@@ -31,13 +31,18 @@
       <priority>0.5</priority>
    </url>
    <url>
-      <loc>https://nonika.ca/patterns/silly-alien</loc>
+      <loc>https://nonika.ca/patterns/whimsy-cardi</loc>
       <changefreq>daily</changefreq>
       <priority>0.4</priority>
    </url>
    <url>
-      <loc>https://nonika.ca/patterns/car-pillow</loc>
+      <loc>https://nonika.ca/patterns/silly-alien</loc>
       <changefreq>daily</changefreq>
       <priority>0.3</priority>
+   </url>
+   <url>
+      <loc>https://nonika.ca/patterns/car-pillow</loc>
+      <changefreq>daily</changefreq>
+      <priority>0.2</priority>
    </url>
 </urlset>
